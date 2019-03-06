@@ -1,0 +1,7 @@
+1	Comment: This bot will export data from an Excel file to a Txt file
+2	Excel: Open Spreadsheet "C:\Users\SLip023\Desktop\AA Files\Data3.xlsx". ActiveSheet: "Default". Session: Default
+3	Excel: Get All Cells Session: Default
+4	Start Loop "Each row in an Excel dataset of Session: Default"
+5	     Log to File: $Excel Column(1)$, $Excel Column(2)$ in "C:\Users\SLip023\Desktop\AA Files\Data3.txt"
+6	End Loop
+7	Excel: Close Spreadsheet. Session: Default
